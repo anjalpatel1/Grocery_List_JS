@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: orange !important;
+}
+
+.container {
+    /* border: 1px solid black; */
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.groceries {
+    /* border: 1px solid black; */
+    width: 600px;
+    min-height: 100vh;  /* the min height feature will make the container big and small according to the contents added in it */ 
+    margin: auto;
+    background: white ;
+    box-shadow: 10px 10px 24px 0 rgba(0, 0, 0, 0.5);
+}
+
+.groceries h1 {
+    font-size: 2.5 rem;
+    margin-top: 1em;
+}
+
+.groceries i {
+    font-size: 2rem;
+    color: orange;
+}
+
+.groceries input {
+    font-family: inherit;
+    outline: 0;
+    border: 0;
+    border-bottom: 3px solid black;  /* This gives it a line at the bottom */
+    width: 70%;
+    font-size: 1.5rem;
+}
+
+#allitems h2 {
+    margin-left: 50px;
+    margin-right: 10px;
+    margin-top: 15px;
+    font-size: 2rem;
+}
+
+@media(max-width: 480px) {
+    .groceries h1 {
+        font-size: 2rem;
+    }
+    .groceries i {
+        font-size: 2rem;
+    }
+    .groceries input {
+        font-size: 2rem;
+    }
+    #allitems h2 {
+        font-size: 1.5 rem;
+        margin-left: 25px;
+    }
+}
+
+
